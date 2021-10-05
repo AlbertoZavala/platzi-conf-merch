@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "platzi-store-merch-33d61",
+    "production": "platzi-store-merch-33d61"
+  },
+  "targets": {}
+}
