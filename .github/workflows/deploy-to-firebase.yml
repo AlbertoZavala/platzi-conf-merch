@@ -12,9 +12,8 @@ jobs:
       - name: Build        
         run: CLIENT_ID_PP=$CLIENT_ID_PP GOOGLE_API_KEY=$GOOGLE_API_KEY npm run build
         env:
-          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          CLIENT_ID_PP: ${{ secrets.CLIENT_ID_PP }}
-          API_URL: ${{ secrets.API_URL }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          CLIENT_ID_PP: ${{ secrets.CLIENT_ID_PP }}          
       - name: Archive Production Artifact
         uses: actions/upload-artifact@main
         with:
