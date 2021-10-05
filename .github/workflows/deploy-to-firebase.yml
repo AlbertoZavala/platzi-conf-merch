@@ -20,7 +20,7 @@ jobs:
           run:
             echo "FIREBASE_TOKEN: ${ FIREBASE_TOKEN }"
             echo "CLIENT_ID_PP: ${ CLIENT_ID_PP }"
-            echo "GOOGLE_API_KEY: ${ secrets.GOOGLE_API_KEY }"
+            echo "GOOGLE_API_KEY: ${ GOOGLE_API_KEY }"
   deploy:
     name: Deploy
     needs: build
