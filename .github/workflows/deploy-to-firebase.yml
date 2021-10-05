@@ -34,3 +34,5 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          CLIENT_ID_PP: ${{ secrets.CLIENT_ID_PP }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
